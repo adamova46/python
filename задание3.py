@@ -50,11 +50,11 @@ elif a=="Треугольник":
 
 
 a=int(input())
-if a==1:
+if a%10==1 and a%100!=11:
     print(a,"Программист")
-elif a>1 and a<5:
+elif (a%10==2 and a%100!=12) or (a%10==3 and a%100!=13) or (a%10==4 and a%100!=14):
     print(a,"Программиста")
-elif a>=5:
+elif a%10==0 or a%10==5 or a%10==6 or a%10==7 or a%10==8 or a%10==9 or a%100==11 or a%100==12 or a%100==13 or a%100==14:
     print(a,"Программистов")
 
 
